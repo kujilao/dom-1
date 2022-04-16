@@ -113,7 +113,7 @@ window.dom = {
     },
     each: function each(nodeList, fn) {
         for (var i = 0; i < nodeList.length; i++) {
-            fn.call(null, nodeList);
+            fn.call(null, nodeList[i]);
         }
     }
 };
@@ -146,7 +146,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '4703' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '7325' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
